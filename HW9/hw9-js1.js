@@ -98,7 +98,7 @@ my3.onclick = () => {
 }
 
 // 12 
-const my4 = document.getElementById('myunique');
+const my4 = document.getElementById('myunique')
 my4.onclick = () => {
     my4.innerText = my4.classList.value;
 }
@@ -106,16 +106,31 @@ my4.onclick = () => {
 // 13 !!!!!!
 
 // 14
-const button1 = document.getElementById("delete");
-const ol = document.getElementsByTagName("ol")[0];
+const button1 = document.getElementById("delete")
+const ol = document.getElementsByTagName("ol")[0]
 button.onclick = () => {
     ol.lastElementChild.remove()
 }
 
 // 15
+const liList = document.getElementsByTagName("li")
+
+for (let item of liList) {
+    item.onclick = () => {
+        item.remove()
+    }
+}
+
 // 16
+let input2 = document.getElementsByTagName('input')[0]
+let button4 = document.getElementsByTagName('button4')[0]
+button4.onclick = () => {
+    document.body.append(input2.cloneNode())
+}
+
 // 17
-const button3 = document.getElementsByTagName('button1')[0];
+const button3 = document.getElementsByTagName('button1')[0]
+
 button3.onclick = () => {
     scrollTo(0,2000)
 }
